@@ -1,0 +1,14 @@
+# 相依套件
+/node_modules
+
+# 建置產出
+/build
+.docusaurus
+.cache-loader
+
+# 其他
+.DS_Store
+.env*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

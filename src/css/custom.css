@@ -1,0 +1,27 @@
+/* TwChipDesk 使用手冊網站樣式 */
+:root {
+  --ifm-color-primary: #c2410c;
+  --ifm-color-primary-dark: #af3b0b;
+  --ifm-color-primary-darker: #a5370a;
+  --ifm-color-primary-darkest: #882d08;
+  --ifm-color-primary-light: #d5470d;
+  --ifm-color-primary-lighter: #df4b0e;
+  --ifm-color-primary-lightest: #f2622a;
+  --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', 'Noto Sans TC', 'Microsoft JhengHei', 'PingFang TC', sans-serif;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #fb923c;
+  --ifm-color-primary-dark: #fa7c1b;
+  --ifm-color-primary-darker: #fa710b;
+  --ifm-color-primary-darkest: #d65c04;
+  --ifm-color-primary-light: #fca85d;
+  --ifm-color-primary-lighter: #fcb36d;
+  --ifm-color-primary-lightest: #fdd29f;
+}
+
+/* 截圖加細框，與頁面背景區隔 */
+.markdown img {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+}

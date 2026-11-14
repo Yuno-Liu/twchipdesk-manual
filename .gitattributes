@@ -1,0 +1,4 @@
+# 文字檔一律 LF，圖片為二進位
+* text=auto eol=lf
+*.jpg binary
+*.png binary
