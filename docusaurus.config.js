@@ -69,6 +69,11 @@ const config = {
     ],
   ],
 
+  // 點內文截圖放大預覽（medium-zoom，打包進網站，不從 CDN 載入）
+  plugins: ['docusaurus-plugin-image-zoom'],
+  // 放大後不會明顯變大的圖（很長的截圖、手機上的所有圖）改在新分頁開原圖
+  clientModules: ['./src/clientModules/openOriginalImage.js'],
+
   themes: [
     [
       '@easyops-cn/docusaurus-search-local',
@@ -100,6 +105,19 @@ const config = {
       },
       colorMode: {
         respectPrefersColorScheme: true,
+      },
+      zoom: {
+        // 只選手冊內文的圖片；導覽列、側邊欄、頁尾與搜尋頁不在 .theme-doc-markdown 內
+        selector: '.theme-doc-markdown img',
+        background: {
+          light: 'rgba(255, 255, 255, 0.95)',
+          dark: 'rgba(27, 27, 29, 0.95)',
+        },
+        config: {
+          // 邊距同時套用桌面與手機；手機 390 寬時內文圖已約 358 寬，邊距再大放大後反而變窄。
+          // 改這個值時 src/clientModules/openOriginalImage.js 的 ZOOM_MARGIN 要一起改
+          margin: 12,
+        },
       },
       prism: {
         theme: prismThemes.github,

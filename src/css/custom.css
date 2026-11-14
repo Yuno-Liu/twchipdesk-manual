@@ -25,3 +25,14 @@
   border: 1px solid var(--ifm-color-emphasis-300);
   border-radius: 4px;
 }
+
+/* 點圖放大（docusaurus-plugin-image-zoom / medium-zoom） */
+.theme-doc-markdown img {
+  cursor: zoom-in;
+}
+
+/* 覆蓋層與放大的圖片要蓋過固定的導覽列（--ifm-z-index-fixed） */
+.medium-zoom-overlay,
+.medium-zoom-image--opened {
+  z-index: calc(var(--ifm-z-index-fixed) + 10);
+}
