@@ -38,7 +38,7 @@ const sidebars = {
         {type: 'doc', id: 'home', label: '首頁'},
         section('個股分析', 'stock', [
           'kline', 'intraday', 'replay', 'report', 'broker', 'bubble', 'map', 'detail',
-          'fundamental', 'news', 'health', 'derivatives', 'pairs', 'warrants', 'events',
+          'fundamental', 'news', 'health', 'derivatives', 'pairs', 'warrants', 'events', 'material',
           'warrant-page',
         ]),
         section('策略選股', 'screener', [
@@ -49,7 +49,7 @@ const sidebars = {
           'rotation', 'global', 'active-etf', 'index-weight', 'warrants', 'group',
           'group-compare',
         ]),
-        section('個股事件', 'events', ['calendar', 'dividends', 'backtest', 'rankings']),
+        section('個股事件', 'events', ['calendar', 'dividends', 'backtest', 'rankings', 'material']),
         section('處置雷達', 'disposition', ['daily', 'outlook', 'active', 'pairs', 'stats', 'rules']),
         section('反轉價位', 'reversal', ['list', 'live', 'backtest']),
         section('期權', 'derivatives', ['basis', 'arbitrage', 'futures', 'options', 'chips', 'calendar']),
