@@ -28,6 +28,7 @@ const sidebars = {
       items: [
         {type: 'doc', id: 'getting-started', label: '快速入門'},
         {type: 'doc', id: 'mobile', label: '手機版'},
+        {type: 'doc', id: 'shortcuts', label: '快捷鍵'},
       ],
     },
     {

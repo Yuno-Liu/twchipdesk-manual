@@ -9,6 +9,7 @@
 ### 開始使用
 - [快速入門：版面、通用操作、標示說明](getting-started.md)
 - [手機版](mobile.md)
+- [快捷鍵](shortcuts.md)
 
 ### 頂部選單
 - [首頁](home.md)
