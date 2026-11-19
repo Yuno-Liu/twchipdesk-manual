@@ -38,9 +38,9 @@ const sidebars = {
       items: [
         {type: 'doc', id: 'home', label: '首頁'},
         section('個股分析', 'stock', [
-          'kline', 'intraday', 'replay', 'report', 'broker', 'bubble', 'map', 'detail',
+          'kline', 'compare', 'intraday', 'replay', 'report', 'broker', 'bubble', 'map', 'detail',
           'fundamental', 'news', 'health', 'derivatives', 'pairs', 'warrants', 'events', 'material',
-          'warrant-page',
+          'etf-holdings', 'warrant-page',
         ]),
         section('策略選股', 'screener', [
           'screener', 'library', 'signals', 'lab', 'portfolio', 'signal-stats', 'conditions',
